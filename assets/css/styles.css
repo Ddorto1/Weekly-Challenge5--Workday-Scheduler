@@ -46,19 +46,22 @@ body {
   .past {
     background-color: red;
     color: white;
+    opacity: .7;
   }
   
   .present {
     background-color: lightskyblue;
     color: white;
+    opacity: .7;
   }
   
   .future {
     background-color: green;
     color: white;
+    opacity: .7;
   }
   
-  .saveBtn {
+  #saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;

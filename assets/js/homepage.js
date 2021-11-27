@@ -1,8 +1,5 @@
 var todaysDate= moment().format('dddd  MM/DD, YYYY, h:mm:ss P');
 var currentHour= moment().format ('HH');
-var save= document.querySelector ('.saveBtn');
-var toDo=document.getElementById("To Do");
-var time=document.querySelector(".time");
 
 var nine= document.getElementById ("9")
 var ten= document.getElementById("10")
@@ -95,14 +92,21 @@ else if (seventeen===currentHour){
 else if (seventeen>currentHour){
     $("#5-PM-To-Do").addClass("past")}
    
+   
+    var save= document.querySelector ('#saveBtn');
+    var toDo=document.querySelector(".To-Do").innerHTML;
+    var time=document.querySelector(".time").innerHTML;
+    console.log (time, toDo);
+
 //set to local storage
     function storeData(){
+       
         localStorage.setItem(time, toDo);
 
     }
 
     save.addEventListener("click", storeData)
-    console.log (save)
+    
     // THEN each time block is color-coded to indicate whether it is in the past, present, or future
     // WHEN I click into a time block
     // THEN I can enter an event
