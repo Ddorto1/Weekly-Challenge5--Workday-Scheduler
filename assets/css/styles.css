@@ -8,9 +8,10 @@ body {
     background: transparent;
     border: none;
     resize: none;
-    color: #000000;
+    color: black;
     border-left: 1px solid black;
     padding: 10px;
+    width: 90%;
   }
   
   .jumbotron {
@@ -43,17 +44,17 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: red;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: lightskyblue;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: green;
     color: white;
   }
   
