@@ -14,82 +14,72 @@ var seventeen= document.getElementById("17")
 // console.log (todaysDate)
 console.log (currentHour)
 
-// var hours= [
-//     "9",
-//     "10",
-//     "11",
-//     "12",
-//     "13",
-//     "14",
-//     "15",
-//     "16",
-//     "17",
-// ]
+
 document.getElementById ("currentDay").innerHTML=(todaysDate)
 
 //text area past, present, future background color else if statements
 
-if (nine>currentHour){
+if (9>currentHour){
     $("#9-AM-To-Do").addClass("future")}
-else if (nine===currentHour){
+else if (9===currentHour){
     $("#9-AM-To-Do").addClass("present")}
-else if (nine<currentHour){
+else if (9<currentHour){
     $("#9-AM-To-Do").addClass("past")}
 
-if (ten>currentHour){
+if (10>currentHour){
     $("#10-AM-To-Do").addClass("future")}
-else if (ten===currentHour){
+else if (10===currentHour){
     $("#10-AM-To-Do").addClass("present")}
-else if (ten<currentHour){
+else if (10<currentHour){
     $("#10-AM-To-Do").addClass("past")}
 
-if (eleven>currentHour){
+if (11>currentHour){
     $("#11-AM-To-Do").addClass("future")}
-else if (eleven===currentHour){
+else if (11===currentHour){
     $("#11-AM-To-Do").addClass("present")}
-else if (eleven<currentHour){
+else if (11<currentHour){
     $("#11-AM-To-Do").addClass("past")}
       
-if (twelve>currentHour){
+if (12>currentHour){
     $("#12-PM-To-Do").addClass("future")}
-else if (twelve===currentHour){
+else if (12===currentHour){
     $("#12-PM-To-Do").addClass("present")}
-else if (twelve<currentHour){
+else if (12<currentHour){
     $("#12-PM-To-Do").addClass("past")}
   
-if (thirteen>currentHour){
+if (13>currentHour){
     $("#1-PM-To-Do").addClass("future")}
-else if (thirteen===currentHour){
+else if (13===currentHour){
     $("#1-PM-To-Do").addClass("present")}
-else if (thirteen<currentHour){
+else if (13<currentHour){
     $("#1-PM-To-Do").addClass("past")}
 
-if (fourteen>currentHour){
+if (14>currentHour){
     $("#2-PM-To-Do").addClass("future")}
-else if (fourteen===currentHour){
+else if (14===currentHour){
     $("#2-PM-To-Do").addClass("present")}
-else if (fourteen<currentHour){
+else if (14<currentHour){
     $("#2-PM-To-Do").addClass("past")}
 
-if (fifteen>currentHour){
+if (15>currentHour){
     $("#3-PM-To-Do").addClass("future")}
-else if (fifteen===currentHour){
+else if (15===currentHour){
     $("#3-PM-To-Do").addClass("present")}
-else if (fifteen<currentHour){
+else if (15<currentHour){
     $("#3-PM-To-Do").addClass("past")}
   
-if (sixteen>currentHour){
+if (16>currentHour){
     $("#4-PM-To-Do").addClass("future")}
-else if (sixteen===currentHour){
+else if (16===currentHour){
     $("#4-PM-To-Do").addClass("present")}
-else if (sixteen<currentHour){
+else if (16<currentHour){
     $("#4-PM-To-Do").addClass("past")}
 
-if (seventeen>currentHour){
+if (17>currentHour){
     $("#5-PM-To-Do").addClass("future")}
-else if (seventeen===currentHour){
+else if (17===currentHour){
     $("#5-PM-To-Do").addClass("present")}
-else if (seventeen<currentHour){
+else if (17<currentHour){
     $("#5-PM-To-Do").addClass("past")}
    
    
@@ -98,18 +88,27 @@ else if (seventeen<currentHour){
     var time=document.querySelector(".time").innerHTML;
     // console.log (time, toDo);
 
+
+    // var hours= {
+    // "9":[],
+    // "10":[],
+    // "11":[],
+    // "12":[],
+    // "13":[],
+    // "14":[],
+    // "15":[],
+    // "16":[],
+    // "17":[],
+    // }
 //set to local storage
     function storeData(){
-        
-        localStorage.setItem(time, JSON.stringify(toDo));
+        localStorage.setItem(time, JSON.stringify(toDo))
 
     }
+
 console.log (storeData)
     save.addEventListener("click", storeData)
     
-    // THEN each time block is color-coded to indicate whether it is in the past, present, or future
-    // WHEN I click into a time block
-    // THEN I can enter an event
     // WHEN I click the save button for that time block
     // THEN the text for that event is saved in local storage
     // WHEN I refresh the page
