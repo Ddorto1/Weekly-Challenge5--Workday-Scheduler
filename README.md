@@ -1,7 +1,5 @@
 # Weekly-Challenge5--Workday-Scheduler
 
-# Workday Scheduler
-
 ## Purpose
 Daily workday scheduler to house to do items and appointments. 
 
